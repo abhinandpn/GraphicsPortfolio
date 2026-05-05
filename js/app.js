@@ -57,6 +57,49 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Custom Cursor Tracking (Elegant Ring & Dot)
+    const cursor = document.querySelector('.custom-cursor');
+    const ring = document.querySelector('.cursor-ring');
+    
+    document.addEventListener('mousemove', (e) => {
+        const x = e.clientX;
+        const y = e.clientY;
+        
+        // Central Dot (Fast)
+        cursor.style.transform = `translate(${x - 3}px, ${y - 3}px)`;
+        
+        // Following Ring (Smooth Lag via CSS transition)
+        ring.style.transform = `translate(${x - 15}px, ${y - 15}px)`;
+    });
+
+    // Cursor hover effect
+    const interactiveElements = document.querySelectorAll('a, button, .tool-icon, .skill-item');
+    interactiveElements.forEach(el => {
+        el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+        el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+    });
+
+    // Interactive Hero Logs (Keep this)
+    const toolIcons = document.querySelectorAll('.tool-icon');
+    const logContainer = document.querySelector('.hero-status-logs');
+    
+    if (logContainer && toolIcons.length > 0) {
+        toolIcons.forEach(icon => {
+            icon.addEventListener('mouseenter', () => {
+                const tech = icon.getAttribute('title');
+                const newLog = document.createElement('div');
+                newLog.className = 'log-entry';
+                newLog.innerHTML = `<span class="log-prompt">></span> initializing_${tech.toLowerCase()}... <span class="log-status">OK</span>`;
+                
+                // Add to top and remove last if too many
+                logContainer.insertBefore(newLog, logContainer.firstChild);
+                if (logContainer.children.length > 6) {
+                    logContainer.removeChild(logContainer.lastChild);
+                }
+            });
+        });
+    }
+
     // Navbar hide/show on scroll
     let lastScrollY = window.scrollY;
     const navbar = document.querySelector('.navbar');

@@ -8,9 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fonts: Anton for bold huge headers, Caveat for handwriting, Inter for body -->
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@700&family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="custom-cursor"></div>
+    <div class="cursor-ring"></div>
 
     <!-- Torn Paper SVG Definitions for reuse -->
     <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
@@ -29,13 +31,13 @@
 
         <div class="hero-content">
             <div class="hero-text-wrapper">
-                <span class="script-text hero-text-load">Graphic Designer</span>
+                <span class="script-text hero-text-load mono-label">Software Developer</span>
                 <h1 class="massive-text">
-                    <span class="letter-layer layer-back">
-                        <span class="char">P</span><span class="char">O</span><span class="char">R</span><span class="char">T</span>
+                    <span class="layer-back">
+                        <span class="char">A</span><span class="char">B</span><span class="char">H</span><span class="char">I</span><span class="char">N</span><span class="char">A</span><span class="char">N</span><span class="char">D</span>
                     </span>
-                    <span class="red-block">
-                        <span class="char">F</span><span class="char">O</span><span class="char">L</span><span class="char">I</span><span class="char">O</span>
+                    <span class="blue-block">
+                        <span class="char">P</span><span class="char">N</span>
                     </span>
                 </h1>
             </div>
@@ -53,23 +55,35 @@
             <div class="decal decal-toolbar">
                 <div class="toolbar-mock">
                     <div class="toolbar-handle"></div>
-                    <div class="tool-icon active"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7,2l12,11.2l-5.8,0.5l3.3,7.3l-2.2,1.1L11,14.9l-4,3.9V2z"/></svg></div>
-                    <div class="tool-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M12,20c-4.41,0-8-3.59-8-8s3.59-8,8-8s8,3.59,8,8S16.41,20,12,20z M11,7h2v6h-2V7z M11,15h2v2h-2V15z"/></svg></div>
-                    <div class="tool-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3,3v18h18V3H3z M20,20H4V4h16V20z M10,10h4v4h-4V10z"/></svg></div>
-                    <div class="tool-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19,3H5C3.89,3,3,3.89,3,5v14c0,1.1,0.89,2,2,2h14c1.11,0,2-0.9,2-2V5C21,3.89,20.11,3,19,3z M19,19H5V5h14V19z M9.5,16.5l2.5-3l3.5,4.5H5L9.5,16.5z"/></svg></div>
-                    <div class="tool-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M2.5,4.5C2.5,3.12,3.62,2,5,2h14c1.38,0,2.5,1.12,2.5,2.5v15c0,1.38-1.12,2.5-2.5,2.5H5c-1.38,0-2.5-1.12-2.5-2.5V4.5z M5,4v16h14V4H5z"/></svg></div>
-                    <!-- Added more -->
-                    <div class="tool-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.71,7.29l-5-5c-0.39-0.39-1.02-0.39-1.41,0L3.29,14.29C3.11,14.47,3,14.72,3,15v5c0,0.55,0.45,1,1,1h5c0.28,0,0.53-0.11,0.71-0.29l12-12C22.1,8.31,22.1,7.68,21.71,7.29z M9,19H5v-4l11-11l4,4L9,19z"/></svg></div>
-                    <div class="tool-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M12,20c-4.41,0-8-3.59-8-8s3.59-8,8-8s8,3.59,8,8S16.41,20,12,20z M11,11V7h2v4h4v2h-4v4h-2v-4H7v-2H11z"/></svg></div>
-                    <div class="tool-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13,2v8h8V2H13z M19,8h-4V4h4V8z M3,11h8V3H3V11z M5,5h4v4H5V5z M13,22h8v-8h-8V22z M15,16h4v4h-4V16z M3,21h8v-8H3V21z M5,15h4v4H5V15z"/></svg></div>
-                    <div class="tool-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12,4.5C7,4.5,2.73,7.61,1,12c1.73,4.39,6,7.5,11,7.5s9.27-3.11,11-7.5C21.27,7.61,17,4.5,12,4.5z M12,17c-2.76,0-5-2.24-5-5s2.24-5,5-5s5,2.24,5,5S14.76,17,12,17z M12,9c-1.66,0-3,1.34-3,3s1.34,3,3,3s3-1.34,3-3S13.66,9,12,9z"/></svg></div>
+                    <!-- 12 Tech Icons -->
+                    <div class="tool-icon active" title="Go"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.16 7.42c1.78 0 2.82 1.13 2.82 1.13l1.11-1.3s-1.39-1.42-3.93-1.42c-2.91 0-5.16 2.12-5.16 5.17s2.25 5.17 5.16 5.17c2.54 0 3.93-1.42 3.93-1.42l-1.11-1.3s-1.04 1.13-2.82 1.13c-1.85 0-3.32-1.33-3.32-3s1.47-3 3.32-3z"/><path d="M22 11h-4v2h4z"/></svg></div>
+                    <div class="tool-icon" title="Docker"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.962 8.161c0 .422-.343.764-.766.764h-2.119c-.423 0-.766-.342-.766-.764V6.042c0-.422.343-.764.766-.764h2.119c.423 0 .766.342.766.764v2.119zm0 2.882c0 .422-.343.764-.766.764h-2.119c-.423 0-.766-.342-.766-.764v-2.119c0-.422.343-.764.766-.764h2.119c.423 0 .766.342.766.764v2.119zm-2.882-2.882c0 .422-.343.764-.766.764H8.2c-.423 0-.766-.342-.766-.764V6.042c0-.422.343-.764.766-.764h2.119c.423 0 .766.342.766.764v2.119zm0 2.882c0 .422-.343.764-.766.764H8.2c-.423 0-.766-.342-.766-.764v-2.119c0-.422.343-.764.766-.764h2.119c.423 0 .766.342.766.764v2.119zm-2.882-2.882c0 .422-.343.764-.766.764H5.318c-.423 0-.766-.342-.766-.764V6.042c0-.422.343-.764.766-.764h2.119c.423 0 .766.342.766.764v2.119zm0 2.882c0 .422-.343.764-.766.764H5.318c-.423 0-.766-.342-.766-.764v-2.119c0-.422.343-.764.766-.764h2.119c.423 0 .766.342.766.764v2.119zm2.882 2.882c0 .422-.343.764-.766.764H8.2c-.423 0-.766-.342-.766-.764v-2.119c0-.422.343-.764.766-.764h2.119c.423 0 .766.342.766.764v2.119zm0 2.882c0 .422-.343.764-.766.764H8.2c-.423 0-.766-.342-.766-.764v-2.119c0-.422.343-.764.766-.764h2.119c.423 0 .766.342.766.764v2.119zm2.882-2.882c0 .422-.343.764-.766.764h-2.119c-.423 0-.766-.342-.766-.764v-2.119c0-.422.343-.764.766-.764h2.119c.423 0 .766.342.766.764v2.119z"/></svg></div>
+                    <div class="tool-icon" title="Kubernetes"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4 5v14l8 3 8-3V5l-8-3zm6 15l-6 2.2L6 17v-4.5l6-2.2 6 2.2V17z"/></svg></div>
+                    <div class="tool-icon" title="Kafka"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                    <div class="tool-icon" title="AWS"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+                    <div class="tool-icon" title="GCP"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg></div>
+                    <div class="tool-icon" title="Redis"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 15v4H5v-4h14m1-2H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zM7 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM19 5v4H5V5h14m1-2H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zM7 8.5c-.83 0-1.5-.67-1.5-1.5S6.17 5.5 7 5.5s1.5.67 1.5 1.5S7.83 8.5 7 8.5z"/></svg></div>
+                    <div class="tool-icon" title="PostgreSQL"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg></div>
+                    <div class="tool-icon" title="MongoDB"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 11h-4V7h-2v4H7v2h4v4h2v-4h4v-2z"/></svg></div>
+                    <div class="tool-icon" title="gRPC"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 3.53-2.61 6.43-6 6.92v3.03c5.05-.5 9-4.76 9-9.95s-3.95-9.45-9-9.95zM11 2.05c-5.05.5-9 4.76-9 9.95s3.95 9.45 9 9.95v-3.03c-3.39-.49-6-3.39-6-6.92 0-3.53 2.61-6.43 6-6.92V2.05z"/></svg></div>
+                    <div class="tool-icon" title="Gin"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+                    <div class="tool-icon" title="Git"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.676 11.31l-9.036-9.037c-.39-.39-1.023-.39-1.413 0l-1.488 1.489 3.39 3.39c.316-.104.68-.026.937.23.256.257.334.62.23.937l3.39 3.39c.316-.104.68-.026.937.23.39.39.39 1.024 0 1.414-.39.39-1.024.39-1.414 0-.256-.257-.333-.62-.23-.937L13.84 9.013c-.104-.317-.026-.68.23-.937.228-.228.536-.317.834-.275L11.516 4.414 4.316 11.614c-.39.39-.39 1.024 0 1.414l9.037 9.037c.39.39 1.024.39 1.414 0l9.037-9.037c.39-.39.39-1.024 0-1.414z"/></svg></div>
                 </div>
             </div>
             
             <div class="decal decal-tape-1"></div>
             <div class="decal decal-tape-2"></div>
             <div class="decal decal-boy-head">
-                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&backgroundColor=ffffff" alt="Cartoon Boy">
+                <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Abhinand&backgroundColor=b6e3f4" alt="Tech Avatar">
+            </div>
+
+            <!-- Floating Status Logs -->
+            <div class="hero-status-logs animate-on-scroll fade-in-right delay-500">
+                <div class="log-entry"><span class="log-prompt">></span> system.init()</div>
+                <div class="log-entry"><span class="log-prompt">></span> loading_modules...</div>
+                <div class="log-entry"><span class="log-prompt">></span> golang_mesh: <span class="log-status">CONNECTED</span></div>
+                <div class="log-entry"><span class="log-prompt">></span> user: abhinandpn</div>
+                <div class="log-entry cursor-blink">_</div>
             </div>
         </div>
         
@@ -81,90 +95,90 @@
         <!-- Background Marquee -->
         <div class="about-marquee">
             <div class="marquee-inner">
-                <span>CREATIVE STRATEGY • VISUAL STORYTELLING • BRAND IDENTITY • MOTION DESIGN • </span>
-                <span>CREATIVE STRATEGY • VISUAL STORYTELLING • BRAND IDENTITY • MOTION DESIGN • </span>
+                <span>GOLANG DEVELOPER • DISTRIBUTED SYSTEMS • MICROSERVICES • CLOUD ARCHITECTURE • </span>
+                <span>GOLANG DEVELOPER • DISTRIBUTED SYSTEMS • MICROSERVICES • CLOUD ARCHITECTURE • </span>
             </div>
         </div>
 
         <div class="container about-grid">
             <div class="about-text">
                 <div class="mask-reveal">
-                    <h2 class="animate-on-scroll fade-in-up">ABOUT <span class="red-text">ME</span></h2>
+                    <h2 class="animate-on-scroll fade-in-up">ABOUT <span class="blue-text">ME</span></h2>
                 </div>
                 <h3 class="about-greeting animate-on-scroll fade-in-up delay-100">
-                    Hello, I'm <span class="name-highlight">Felix</span>
+                    Hello, I'm <span class="name-highlight">abhinandpn</span>
                 </h3>
-                <h4 class="animate-on-scroll fade-in-up delay-200">Graphic Designer based in London, specializing in high-end brand experiences.</h4>
+                <h4 class="animate-on-scroll fade-in-up delay-200">Software Developer based in Kerala, specializing in building high-performance distributed systems.</h4>
                 <p class="animate-on-scroll fade-in-up delay-300">
-                    With over 5 years of experience in the industry, I bridge the gap between complex business goals and intuitive visual solutions. My approach combines meticulous research with bold, experimental aesthetics to create brands that don't just exist—they lead.
+                    Results-oriented Golang Developer with 1+ year of experience, currently developing a production-level social media platform at Steyp (At Talrop). Specialized in building distributed systems with Golang, Kafka, gRPC, WebSockets, and Cassandra. Strong command over clean architecture principles, API development, real-time communication, and microservices deployment in Docker and Kubernetes environments.
                 </p>
                 
                 <div class="about-stats animate-on-scroll zoom-in delay-400">
                     <div class="stat-item">
-                        <span class="stat-num counter" data-target="5">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-num counter" data-target="1">0</span><span class="stat-suffix">+</span>
                         <span class="stat-label">Years Exp.</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-num counter" data-target="120">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-num counter" data-target="10">0</span><span class="stat-suffix">+</span>
                         <span class="stat-label">Projects</span>
                     </div>
                 </div>
             </div>
 
             <div class="about-collage animate-on-scroll fade-in-right">
-                <div class="red-arch"></div>
+                <div class="blue-arch"></div>
                 <div class="portrait-wrapper">
-                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&backgroundColor=ff2020" alt="Felix Portrait" class="portrait-img">
+                    <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Abhinand&backgroundColor=00ADD8" alt="Abhinand Avatar" class="portrait-img">
                 </div>
                 
                 <!-- Floating Info Cards -->
                 <div class="info-card card-1 animate-on-scroll zoom-in delay-300">
-                    <span class="card-icon">🎨</span>
-                    <span>UI/UX Expert</span>
+                    <span class="card-icon">🐹</span>
+                    <span>Golang Expert</span>
                 </div>
                 <div class="info-card card-2 animate-on-scroll zoom-in delay-350">
                     <span class="card-icon">⚡</span>
-                    <span>Fast Delivery</span>
+                    <span>gRPC & Protobuf</span>
                 </div>
                 <div class="info-card card-3 animate-on-scroll zoom-in delay-400">
-                    <span class="card-icon">💎</span>
-                    <span>Premium Quality</span>
+                    <span class="card-icon">🐳</span>
+                    <span>Docker & K8s</span>
                 </div>
                 <div class="info-card card-4 animate-on-scroll zoom-in delay-450">
-                    <span class="card-icon">🚀</span>
-                    <span>Creative Strategy</span>
+                    <span class="card-icon">📡</span>
+                    <span>WebSockets</span>
                 </div>
                 <div class="info-card card-5 animate-on-scroll zoom-in delay-500">
-                    <span class="card-icon">📱</span>
-                    <span>Mobile First</span>
+                    <span class="card-icon">⚙️</span>
+                    <span>Microservices</span>
                 </div>
                 <div class="info-card card-6 animate-on-scroll zoom-in delay-550">
-                    <span class="card-icon">🖋️</span>
-                    <span>Brand Identity</span>
+                    <span class="card-icon">📊</span>
+                    <span>Cassandra & SQL</span>
                 </div>
                 <div class="info-card card-7 animate-on-scroll zoom-in delay-600">
-                    <span class="card-icon">📐</span>
-                    <span>Grid Systems</span>
+                    <span class="card-icon">🔄</span>
+                    <span>Kafka Streams</span>
                 </div>
                 <div class="info-card card-8 animate-on-scroll zoom-in delay-650">
-                    <span class="card-icon">🎬</span>
-                    <span>Motion Design</span>
+                    <span class="card-icon">🛡️</span>
+                    <span>Clean Architecture</span>
                 </div>
                 <div class="info-card card-9 animate-on-scroll zoom-in delay-700">
-                    <span class="card-icon">📦</span>
-                    <span>Packaging</span>
+                    <span class="card-icon">🚀</span>
+                    <span>CI/CD Pipelines</span>
                 </div>
                 <div class="info-card card-10 animate-on-scroll zoom-in delay-750">
-                    <span class="card-icon">🔍</span>
-                    <span>UX Research</span>
+                    <span class="card-icon">☁️</span>
+                    <span>AWS & GCP</span>
                 </div>
                 <div class="info-card card-11 animate-on-scroll zoom-in delay-800">
-                    <span class="card-icon">🎨</span>
-                    <span>Color Theory</span>
+                    <span class="card-icon">🛠️</span>
+                    <span>Event-Driven</span>
                 </div>
                 <div class="info-card card-12 animate-on-scroll zoom-in delay-850">
-                    <span class="card-icon">✨</span>
-                    <span>Art Direction</span>
+                    <span class="card-icon">🧠</span>
+                    <span>Problem Solving</span>
                 </div>
 
                 <!-- Decorative elements -->
@@ -179,7 +193,7 @@
     </section>
 
     <!-- SECTION 3: SKILLS -->
-    <section id="skills" class="bg-red section-full relative">
+    <section id="skills" class="bg-black section-full relative">
         <div class="torn-divider top-torn"></div>
         
         
@@ -188,35 +202,35 @@
             <div class="skills-list animate-on-scroll fade-in-left">
                 <h2>SKILLS</h2>
                 <div class="skills-grid-inner">
-                    <div class="skill-item animate-on-scroll fade-in-up delay-100"><span>BRANDING</span></div>
-                    <div class="skill-item animate-on-scroll fade-in-up delay-200"><span>LOGO DESIGN</span></div>
-                    <div class="skill-item animate-on-scroll fade-in-up delay-300"><span>UI/UX</span></div>
-                    <div class="skill-item animate-on-scroll fade-in-up delay-400"><span>MOTION</span></div>
-                    <div class="skill-item animate-on-scroll fade-in-up delay-100"><span>PRINT</span></div>
-                    <div class="skill-item animate-on-scroll fade-in-up delay-200"><span>TYPE</span></div>
-                    <div class="skill-item animate-on-scroll fade-in-up delay-300"><span>ART</span></div>
-                    <div class="skill-item animate-on-scroll fade-in-up delay-400"><span>PACKAGING</span></div>
-                    <div class="skill-item animate-on-scroll fade-in-up delay-500"><span>SOCIAL</span></div>
+                    <div class="skill-item animate-on-scroll fade-in-up delay-100"><span>GOLANG</span></div>
+                    <div class="skill-item animate-on-scroll fade-in-up delay-200"><span>GIN</span></div>
+                    <div class="skill-item animate-on-scroll fade-in-up delay-300"><span>GRPC</span></div>
+                    <div class="skill-item animate-on-scroll fade-in-up delay-400"><span>WEBSOCKET</span></div>
+                    <div class="skill-item animate-on-scroll fade-in-up delay-100"><span>DOCKER</span></div>
+                    <div class="skill-item animate-on-scroll fade-in-up delay-200"><span>K8S</span></div>
+                    <div class="skill-item animate-on-scroll fade-in-up delay-300"><span>KAFKA</span></div>
+                    <div class="skill-item animate-on-scroll fade-in-up delay-400"><span>CASSANDRA</span></div>
+                    <div class="skill-item animate-on-scroll fade-in-up delay-500"><span>AWS</span></div>
                 </div>
             </div>
             <div class="tools-list animate-on-scroll fade-in-up delay-200">
                 <h2>TOOLS</h2>
                 <div class="tool-icons">
-                    <span class="ps animate-on-scroll zoom-in delay-100">Ps</span>
-                    <span class="ai animate-on-scroll zoom-in delay-200">Ai</span>
-                    <span class="ae animate-on-scroll zoom-in delay-300">Ae</span>
-                    <span class="pr animate-on-scroll zoom-in delay-400">Pr</span>
-                    <span class="id animate-on-scroll zoom-in delay-500">Id</span>
-                    <span class="fg animate-on-scroll zoom-in delay-100">Fg</span>
-                    <span class="bl animate-on-scroll zoom-in delay-200">Bl</span>
-                    <span class="lr animate-on-scroll zoom-in delay-300">Lr</span>
-                    <span class="xd animate-on-scroll zoom-in delay-400">Xd</span>
+                    <span class="go-tool animate-on-scroll zoom-in delay-100">Go</span>
+                    <span class="docker-tool animate-on-scroll zoom-in delay-200">🐳</span>
+                    <span class="k8s-tool animate-on-scroll zoom-in delay-300">K8s</span>
+                    <span class="kafka-tool animate-on-scroll zoom-in delay-400">Kafka</span>
+                    <span class="aws-tool animate-on-scroll zoom-in delay-500">AWS</span>
+                    <span class="git-tool animate-on-scroll zoom-in delay-100">Git</span>
+                    <span class="redis-tool animate-on-scroll zoom-in delay-200">Redis</span>
+                    <span class="mongo-tool animate-on-scroll zoom-in delay-300">DB</span>
+                    <span class="grpc-tool animate-on-scroll zoom-in delay-400">gRPC</span>
                 </div>
             </div>
             <div class="approach-text animate-on-scroll fade-in-right delay-300">
-                <h2>APPROACH TO DESIGN</h2>
-                <p><strong>RESEARCH AND STRATEGY:</strong> START BY UNDERSTANDING THE BRAND'S PERSONALITY, MARKET, AND TARGET AUDIENCE.</p>
-                <p><strong>COLLABORATION:</strong> WORK CLOSELY WITH CROSS-FUNCTIONAL TEAMS TO ENSURE ALIGNMENT AND SEAMLESS INTEGRATION.</p>
+                <h2>ENGINEERING PHILOSOPHY</h2>
+                <p><strong>SCALABILITY & PERFORMANCE:</strong> DESIGNING SYSTEMS THAT HANDLE MILLIONS OF REQUESTS WITH MINIMAL LATENCY.</p>
+                <p><strong>CLEAN CODE:</strong> ADHERING TO SOLID PRINCIPLES AND CLEAN ARCHITECTURE FOR MAINTAINABLE CODEBASES.</p>
             </div>
         </div>
 
@@ -230,81 +244,219 @@
         
         
 
-        <!-- Logo Design Row -->
-        <div class="work-row container logo-row">
+        <!-- Project 1: E-commerce Backend -->
+        <div class="work-row container project-row">
             <div class="work-title animate-on-scroll fade-in-left">
-                <h2>LOGO <span class="red-text">DESIGN</span></h2>
-                <p class="animate-on-scroll fade-in-up delay-100">Curated collection of bold and impactful logo designs crafted to define brand identity and presence across various mediums.</p>
+                <h2>E-COMMERCE <span class="blue-text">BACKEND</span></h2>
+                <p class="animate-on-scroll fade-in-up delay-100">Built a RESTful API backend for an e-commerce application using Go and Gin. Integrated PostgreSQL and hosted via Docker on AWS EC2.</p>
+                <div class="tech-tags animate-on-scroll fade-in-up delay-200">
+                    <span>Go</span><span>Gin</span><span>PostgreSQL</span><span>Docker</span><span>AWS EC2</span><span>Swagger</span>
+                </div>
+                <div class="project-links animate-on-scroll fade-in-up delay-300">
+                    <a href="#" class="btn-link">SOURCE CODE</a>
+                </div>
             </div>
-            <div class="work-images logo-grid animate-on-scroll zoom-in delay-200">
-                <div class="img-box img-tall"><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop" alt="Tote Bag"></div>
-                <div class="img-box img-wide red-box"><h3 class="logo-mark">mD</h3></div>
-                <div class="img-box img-small"><img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=400&auto=format&fit=crop" alt="Hat"></div>
-                <div class="img-box img-small"><img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=400&auto=format&fit=crop" alt="Tag"></div>
-            </div>
-        </div>
-
-        <!-- Branding Design Row -->
-        <div class="work-row container branding-row">
-           
-            <div class="decal decal-tape-6"></div>
-            
-            <div class="work-images branding-collage animate-on-scroll fade-in-left">
-                <div class="poster-mockup"><img src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?q=80&w=400&auto=format&fit=crop" alt="Poster"></div>
-                <div class="phone-mockup">
-                    <div class="phone-screen">
-                        <div class="ig-header">INSTAGRAM<br><span class="red-text">PROFILE</span></div>
-                        <div class="ig-grid">
-                            <div class="ig-item"></div><div class="ig-item"></div><div class="ig-item"></div>
-                            <div class="ig-item"></div><div class="ig-item"></div><div class="ig-item"></div>
-                        </div>
+            <div class="work-images project-visual animate-on-scroll zoom-in delay-200">
+                <div class="terminal-mockup">
+                    <div class="terminal-header">
+                        <div class="terminal-dot red"></div>
+                        <div class="terminal-dot yellow"></div>
+                        <div class="terminal-dot green"></div>
+                        <span class="terminal-title">ecommerce-backend.go</span>
+                    </div>
+                    <div class="terminal-body">
+                        <pre><code><span class="code-keyword">func</span> <span class="code-func">main</span>() {
+    r := gin.<span class="code-func">Default</span>()
+    db := database.<span class="code-func">Connect</span>()
+    
+    api := r.<span class="code-func">Group</span>(<span class="code-str">"/api/v1"</span>)
+    {
+        api.<span class="code-func">POST</span>(<span class="code-str">"/orders"</span>, orderHandler.<span class="code-func">Create</span>)
+        api.<span class="code-func">GET</span>(<span class="code-str">"/products"</span>, productHandler.<span class="code-func">List</span>)
+    }
+    
+    r.<span class="code-func">Run</span>(<span class="code-str">":8080"</span>)
+}</code></pre>
                     </div>
                 </div>
             </div>
-            <div class="work-title right-align animate-on-scroll fade-in-right delay-200">
-                <h2>BRANDING <span class="red-text">DESIGN</span></h2>
-                <p class="animate-on-scroll fade-in-up delay-300">Comprehensive visual systems that communicate core values and engage users through cohesive aesthetics.</p>
+        </div>
+
+        <!-- Project 2: gRPC Microservices -->
+        <div class="work-row container project-row reverse">
+            <div class="work-images project-visual animate-on-scroll zoom-in delay-200">
+                <div class="terminal-mockup">
+                    <div class="terminal-header">
+                        <div class="terminal-dot red"></div>
+                        <div class="terminal-dot yellow"></div>
+                        <div class="terminal-dot green"></div>
+                        <span class="terminal-title">services.proto</span>
+                    </div>
+                    <div class="terminal-body">
+                        <pre><code><span class="code-keyword">syntax</span> = <span class="code-str">"proto3"</span>;
+
+<span class="code-keyword">service</span> OrderService {
+  <span class="code-keyword">rpc</span> <span class="code-func">CreateOrder</span>(OrderRequest) <span class="code-keyword">returns</span> (OrderResponse);
+}
+
+<span class="code-keyword">message</span> OrderRequest {
+  <span class="code-keyword">string</span> user_id = 1;
+  <span class="code-keyword">repeated</span> <span class="code-keyword">string</span> items = 2;
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="work-title right-align animate-on-scroll fade-in-right">
+                <h2>GRPC <span class="blue-text">MICROSERVICES</span></h2>
+                <p class="animate-on-scroll fade-in-up delay-100">Designing scalable communication between services using gRPC and Kafka. Built with modular, clean architecture principles.</p>
+                <div class="tech-tags animate-on-scroll fade-in-up delay-200" style="justify-content: flex-end;">
+                    <span>gRPC</span><span>Kafka</span><span>Redis</span><span>Go</span><span>GCP</span><span>Docker</span>
+                </div>
+                <div class="project-links animate-on-scroll fade-in-up delay-300">
+                    <a href="#" class="btn-link">SOURCE CODE</a>
+                </div>
             </div>
         </div>
 
         <div class="torn-divider bottom-torn"></div>
     </section>
 
-    <!-- SECTION 5: FOOTER / CTA -->
+    <!-- SECTION 5: PROFESSIONAL EXPERIENCE -->
+    <section id="experience" class="bg-black section-auto relative">
+        <div class="container">
+            <h2 class="section-title white-text">SYSTEM <span class="blue-text">LOGS</span></h2>
+            <div class="experience-timeline">
+                <!-- Timeline Line -->
+                <div class="timeline-line"></div>
+
+                <!-- Experience Node -->
+                <div class="timeline-node animate-on-scroll fade-in-up">
+                    <div class="node-dot"></div>
+                    <div class="node-content">
+                        <div class="node-header">
+                            <div class="node-title-group">
+                                <span class="node-role">GOLANG DEVELOPER</span>
+                                <h3 class="node-company">TALROP - STEYP</h3>
+                            </div>
+                            <div class="node-meta">
+                                <span class="node-date">JAN 2025 — PRESENT</span>
+                                <span class="node-status"><span class="status-dot"></span> ACTIVE</span>
+                            </div>
+                        </div>
+                        
+                        <div class="node-body">
+                            <div class="experience-grid">
+                                <div class="exp-item">
+                                    <div class="exp-icon">📡</div>
+                                    <div class="exp-text">
+                                        <strong>Social Architecture</strong>
+                                        <p>Leading backend development for a large-scale social platform using Go and microservices.</p>
+                                    </div>
+                                </div>
+                                <div class="exp-item">
+                                    <div class="exp-icon">⚡</div>
+                                    <div class="exp-text">
+                                        <strong>Real-time Systems</strong>
+                                        <p>Implemented WebSocket layers for messaging and live interactions with sub-100ms latency.</p>
+                                    </div>
+                                </div>
+                                <div class="exp-item">
+                                    <div class="exp-icon">📊</div>
+                                    <div class="exp-text">
+                                        <strong>Scale Persistence</strong>
+                                        <p>Architected Cassandra clusters for high-availability feed generation and user data storage.</p>
+                                    </div>
+                                </div>
+                                <div class="exp-item">
+                                    <div class="exp-icon">🔄</div>
+                                    <div class="exp-text">
+                                        <strong>Event Streaming</strong>
+                                        <p>Integrated Kafka for asynchronous post creation, notifications, and log aggregation.</p>
+                                    </div>
+                                </div>
+                                <div class="exp-item">
+                                    <div class="exp-icon">🐳</div>
+                                    <div class="exp-text">
+                                        <strong>Cloud Native</strong>
+                                        <p>Orchestrated services via Docker & Kubernetes on AWS with automated CI/CD pipelines.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="node-footer">
+                            <div class="commit-hash">COMMIT: 7f3a9d2</div>
+                            <div class="tech-stack-inline">
+                                <span>#golang</span><span>#kafka</span><span>#grpc</span><span>#k8s</span><span>#aws</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: CONTACT & FOOTER -->
     <section id="contact" class="bg-black section-full relative">
+        <div class="torn-divider top-torn"></div>
         
+        <div class="container contact-container">
+            <div class="contact-header animate-on-scroll fade-in-up">
+                <h2 class="section-title white-text">INITIALIZE <span class="blue-text">CONNECTION</span></h2>
+            </div>
 
-        <div class="cta-container">
-            <div class="decal decal-tape-7"></div>
-            <h1 class="massive-cta animate-on-scroll zoom-in">
-                <div class="cta-line1"><span class="red-block">LET'S WORK</span></div>
-                <div class="cta-line2">TOGETHER</div>
-            </h1>
-            <div class="doodle-crown footer-crown">
-                <svg viewBox="0 0 100 100" fill="none" stroke="var(--red)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M10 50 L30 10 L50 40 L70 10 L90 50 Z" />
-                </svg>
+            <div class="contact-grid">
+                <!-- Massive CTA Side -->
+                <div class="contact-cta-side animate-on-scroll fade-in-left">
+                    <h1 class="massive-cta">
+                        <div class="cta-line1"><span class="blue-block">LET'S BUILD</span></div>
+                        <div class="cta-line2">SCALABLE FUTURE</div>
+                    </h1>
+                </div>
+
+                <!-- Technical Contact Info -->
+                <div class="contact-info-side animate-on-scroll fade-in-right">
+                    <div class="terminal-mockup contact-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-dot red"></div>
+                            <div class="terminal-dot yellow"></div>
+                            <div class="terminal-dot green"></div>
+                            <span class="terminal-title">contact.json</span>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><code>{
+  <span class="code-keyword">"identity"</span>: <span class="code-str">"Abhinand P N"</span>,
+  <span class="code-keyword">"role"</span>: <span class="code-str">"Software Developer"</span>,
+  <span class="code-keyword">"contact"</span>: {
+    <span class="code-keyword">"email"</span>: <span class="code-str">"dev.abhinandpn@gmail.com"</span>,
+    <span class="code-keyword">"mobile"</span>: <span class="code-str">"+91 8086324067"</span>
+  },
+  <span class="code-keyword">"availability"</span>: <span class="code-keyword">true</span>,
+  <span class="code-keyword">"status"</span>: <span class="code-str">"READY_FOR_COLAB"</span>
+}</code></pre>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-social-tech">
+                        <a href="https://github.com/abhinandpn" class="tech-social-link">
+                            <span class="link-label">GITHUB</span>
+                            <span class="link-arrow">↗</span>
+                        </a>
+                        <a href="https://linkedin.com/in/abhinandpn" class="tech-social-link">
+                            <span class="link-label">LINKEDIN</span>
+                            <span class="link-arrow">↗</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="decal decal-boy-footer">
-                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&backgroundColor=ffffff" alt="Cartoon Boy">
-            </div>
-            <div class="decal decal-star footer-star">★</div>
         </div>
 
-        <div class="footer-services">
-            GRAPHIC DESIGN | BRANDING DESIGN | LOGO DESIGN | PRINT MEDIA DESIGN
-        </div>
-
-        <footer class="site-footer">
-            <div class="contact-me">CONTACT ME</div>
-            <div class="website-link">www.yourwebsite.com</div>
-            <div class="social-links">
-                <span class="social-icon">in</span>
-                <span class="social-icon">ig</span>
-                <span class="social-icon">be</span>
-                <span class="social-icon">db</span>
+        <div class="final-footer">
+            <div class="container footer-bottom-inner">
+                <div class="footer-copyright">© 2024 ABHINAND P N • GOLANG & MICROSERVICES</div>
+                <div class="footer-status-pill"><span class="status-dot"></span> SYSTEM OPERATIONAL</div>
             </div>
-        </footer>
+        </div>
     </section>
 
     <script src="js/app.js"></script>
