@@ -1,68 +1,66 @@
-# 🎨 Felix | Graphic Designer Portfolio
+# 🖥️ Abhinand P N | Software Developer Portfolio
 
 <p align="center">
-  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&backgroundColor=ff2020" width="150" height="150" />
+  <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Abhinand&backgroundColor=b6e3f4" width="150" height="150" />
 </p>
 
 <p align="center">
-  <strong>A Cinematic Digital Scrapbook Experience</strong>
+  <strong>High-Performance Systems & Scalable Microservices</strong>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/VanillaJS-333333?style=for-the-badge&logo=javascript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
 </p>
 
 ---
 
-## 📽️ Project Vision
-This isn't just a portfolio; it's a **digital manifesto**. Built for high-end graphic designers, the site blends **raw analog aesthetics** (torn paper, tape, scribbles) with **cutting-edge digital motion**. 
+## 🚀 The Vision
+This portfolio is a **System Dashboard** designed for a backend-focused engineer. It moves away from generic design aesthetics toward a **Systemic/Terminal identity**, highlighting expertise in building robust, high-performance distributed systems.
 
-The goal? To prove that vanilla web technologies can deliver a premium, cinematic experience that rivals complex frameworks.
+The goal? To showcase that sophisticated engineering can be presented with premium, creative visual flair.
 
 ---
 
-## 💎 The Creative Core
+## 💎 Key Features
 
-### ⚡ Cinematic Hero
-*   **Physics-Based Typography:** Every character in "PORTFOLIO" is an independent entity, revealing itself with a staggered, physics-inspired entrance.
-*   **Atmospheric Spotlight:** A dynamic radial glow follows your every move, interacting with a subtle film grain overlay.
-*   **Floating Decals:** Design-software artifacts (Toolbars, Tape, Doodles) drift in the background with calculated parallax.
+### ⚡ System Initialize (Hero)
+*   **12-Icon Tech Stack:** A floating glassmorphism toolbar featuring the core tech ecosystem (Go, K8s, Kafka, etc.).
+*   **Interactive Status Logs:** Real-time log panel that updates as you interact with the system modules.
+*   **Terminal Caret Cursor:** A custom "Ring & Dot" cursor that moves with fluid, high-end physics.
 
-### 🧬 Morphing "About" Collage
-*   **Liquid Shapes:** A background blob that never stays the same—morphing through organic curves in a smooth, infinite loop.
-*   **The 12-Point Expert Grid:** A high-density cluster of expertise cards that frame the portrait, each revealed with precise timing.
-*   **Kinetic Stats:** Live counters that spring into action the moment they enter your view.
+### 🧬 Professional Experience (Git History)
+*   **Creative Timeline:** Instead of a static list, experience is presented as a series of **"System Logs"** and **"Git Commits"**.
+*   **Commit Visualization:** Each role is a commit node on a glowing branch, emphasizing a history of shipping code.
 
-### 🖋️ Scribble System
-*   **Marker Underlines:** All major headings feature a "scribble" underline that literally draws itself as you scroll, mimicking a designer's pen on paper.
-*   **Gravity Tools:** Software icons (Ps, Ai, Ae) drift in a zero-gravity environment, reacting with smooth eases on interaction.
+### 🛠️ Technical Projects
+*   **Terminal Mockups:** Projects like "gRPC Microservices" and "E-commerce Backend" are displayed within high-fidelity terminal code blocks.
+*   **Architecture-First:** Focus on clean code, SOLID principles, and scalable infrastructure.
 
 ---
 
 ## 🛠️ Technical Breakdown
 
-| Feature | Tech | Logic |
+| Feature | Implementation | Aesthetic |
 | :--- | :--- | :--- |
-| **Motion** | CSS3 Keyframes | Hardware-accelerated transforms |
-| **Reveal** | IntersectionObserver | Efficient, lag-free scroll detection |
-| **Counter** | requestAnimationFrame | Buttery-smooth numeric interpolation |
-| **Spotlight** | CSS Variables | Dynamic `--mouse-x` & `--mouse-y` binding |
+| **Motion** | CSS3 & IntersectionObserver | Fluid, hardware-accelerated transitions |
+| **Interactivity** | Vanilla JS / requestAnimationFrame | Real-time particle trails & log updates |
+| **Theme** | Gopher Blue (#00ADD8) | Modern dark-systemic aesthetic |
+| **Fonts** | JetBrains Mono & Anton | High-end technical typography |
 
 ---
 
 ## 🚀 Experience It Locally
-
-No build steps. No complex installs. Just raw, optimized code.
 
 1. **Clone & Explore:**
    ```bash
    git clone https://github.com/abhinandpn/GraphicsPortfolio.git
    ```
 2. **Launch:**
-   Open `index.html` or use a simple server:
+   Open `index.html` or use a local dev server:
    ```bash
    npx serve .
    ```
@@ -70,9 +68,9 @@ No build steps. No complex installs. Just raw, optimized code.
 ---
 
 <p align="center">
-  <i>"Design is not just what it looks like. Design is how it moves."</i>
+  <i>"Scalability is not an afterthought; it's the foundation."</i>
 </p>
 
 <p align="center">
-  <b>Built with passion by Antigravity AI</b>
+  <b>Rebranded and Optimized by Antigravity AI</b>
 </p>
