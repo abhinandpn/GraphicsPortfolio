@@ -16,6 +16,11 @@
     --cursor-size: 20px;
 }
 
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 /* Premium Texture Overlay */
 body::before {
     content: "";
@@ -1759,16 +1764,134 @@ body.loaded .script-text {
 .decal-tape-1 { animation-delay: 0.7s; }
 .decal-boy-head { animation-delay: 0.4s; }
 
-/* Responsive */
-@media (max-width: 1024px) {
-    .about-grid, .skills-grid, .work-row {
-        grid-template-columns: 1fr;
-    }
-    .branding-row { display: flex; flex-direction: column-reverse; }
-    .about-image { height: 400px; }
-    .work-images { height: 400px; }
+/* === MASTER RESPONSIVENESS (PERFECT FOR ALL SIZES) === */
+
+/* Fluid Typography Root */
+:root {
+    --h1-size: clamp(3rem, 15vw, 12rem);
+    --h2-size: clamp(2rem, 8vw, 4rem);
+    --body-size: clamp(0.9rem, 1.5vw, 1.1rem);
 }
 
+.massive-text { font-size: var(--h1-size); }
+.section-title { font-size: var(--h2-size); }
+
+@media (max-width: 1400px) {
+    .container { max-width: 1100px; }
+}
+
+/* Tablet & Smaller Desktop (iPad Pro, Surface) */
+@media (max-width: 1024px) {
+    .container { max-width: 900px; }
+    .about-grid, .skills-grid, .work-row { gap: 40px; }
+    .massive-text { font-size: 12vw; }
+    .about-greeting { font-size: 2.8rem; }
+    .name-highlight { font-size: 3.5rem; }
+}
+
+/* Tablet Vertical (iPad Air, iPad Mini) */
+@media (max-width: 850px) {
+    .about-grid, .work-row, .contact-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .decal-toolbar { display: none; } /* Hide toolbar if too cramped */
+}
+
+/* Mobile Devices (iPhone 14 Pro Max, Pixel 7, Galaxy S20) */
+@media (max-width: 768px) {
+    .section-full, .section-auto { padding: 50px 0; }
+    
+    /* Cursor - Always disable for touch */
+    .custom-cursor, .cursor-ring { display: none !important; }
+    * { cursor: auto !important; }
+
+    .massive-text { font-size: 15vw; white-space: normal; text-align: center; }
+    .script-text { font-size: 2.5rem; top: -10px; }
+    
+    .hero-status-logs { display: none; }
+    
+    /* Project Layout Adjustments */
+    .work-title.right-align {
+        padding-left: 30px;
+        padding-right: 0;
+        border-right: none;
+        border-left: 3px solid var(--blue);
+        text-align: left;
+    }
+    .right-align .tech-tags { justify-content: flex-start; }
+    
+    .terminal-mockup { width: 100%; height: auto; }
+}
+
+/* Small Mobile (iPhone SE, iPhone XR) */
+@media (max-width: 400px) {
+    .container { padding: 0 20px; }
+    .massive-text { font-size: 18vw; }
+    .about-greeting { font-size: 2rem; }
+    .name-highlight { font-size: 2.8rem; }
+    .section-title { font-size: 2.2rem; }
+    
+    .about-collage {
+        transform: scale(0.9);
+    }
+    
+    .footer-bottom-inner {
+        font-size: 0.7rem;
+    }
+    .footer-status-pill {
+        font-size: 0.65rem;
+        padding: 4px 10px;
+    }
+}
+
+/* Specialized: Galaxy Z Fold / Surface Duo (Open state) */
+@media (min-width: 600px) and (max-width: 900px) and (orientation: landscape) {
+    .section-full { min-height: auto; padding: 80px 0; }
+    .massive-text { font-size: 8vw; }
+}
+/* Fullscreen Toggle Button */
+.fullscreen-btn {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background: rgba(0, 173, 216, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 173, 216, 0.3);
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 10001;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.fullscreen-btn:hover {
+    background: var(--blue);
+    color: var(--white);
+    transform: scale(1.1);
+}
+.fullscreen-btn svg {
+    width: 20px;
+    height: 20px;
+}
+.fullscreen-active svg {
+    transform: scale(0.8) rotate(180deg);
+}
+
+@media (max-width: 768px) {
+    .fullscreen-btn {
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}
 /* Refined Blue Block Styling */
 .blue-block {
     /* Shadows and filters removed as per request */

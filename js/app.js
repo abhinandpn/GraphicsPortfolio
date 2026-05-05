@@ -168,4 +168,33 @@ document.addEventListener('DOMContentLoaded', () => {
     if (statsContainer) {
         counterObserver.observe(statsContainer);
     }
+
+    // Fullscreen Toggle Logic
+    const fsBtn = document.getElementById('fullscreen-btn');
+    if (fsBtn) {
+        fsBtn.addEventListener('click', () => {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().then(() => {
+                    fsBtn.classList.add('fullscreen-active');
+                }).catch(err => {
+                    console.error(`Error attempting to enable full-screen mode: ${err.message}`);
+                });
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen().then(() => {
+                        fsBtn.classList.remove('fullscreen-active');
+                    });
+                }
+            }
+        });
+
+        // Sync button state if fullscreen is exited via ESC key
+        document.addEventListener('fullscreenchange', () => {
+            if (!document.fullscreenElement) {
+                fsBtn.classList.remove('fullscreen-active');
+            } else {
+                fsBtn.classList.add('fullscreen-active');
+            }
+        });
+    }
 });
